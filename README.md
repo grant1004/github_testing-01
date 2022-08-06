@@ -1,3 +1,4 @@
+
 # github_testing 
 # learn how to use github && git 
 # hello world !!!
@@ -77,4 +78,10 @@ git remote add origin <github網址>
 
 
 
+
+
+
+
+### ref : [https://ithelp.ithome.com.tw/articles/10214385] 
+### ref : [https://git-scm.com/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6]
 
