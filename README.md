@@ -1,7 +1,6 @@
 
-# github_testing 
+# git hub 學習筆記 ( cmd | bash 使用方式 ) ( windows 10 )
 # learn how to use github && git 
-# hello world !!!
 
 ### git --version 查看版本 
 
@@ -50,31 +49,34 @@
 > 版本資訊
 ---
 
-> 總結 : 以下都是在同一個資料夾下面完成 
+> 本地數據庫 使用方法 
 > 1. git init 把此資料夾當做數據庫   
-> 2. git clone 取得要執行的專案
-> 3. 使用 git add 將檔案加進數據庫的 staging area,讓git可以追蹤那些檔案 
+> 2. 自行決定要新增的檔案或資料夾
+> 3. 使用 git add 將檔案加進數據庫的 staging area, 讓 git 可以追蹤那些檔案 
 > 4. git commit -m "<填寫版本資訊>" 提交檔案並附上更新備註(版本資訊 EX:哪裡改了什麼) 
 > *有更新過的檔案要完成提交才可以push到github.com上遠端共享的數據庫*
 ---
-> 將目前資料夾建立成 git 數據庫：git init 
-
-> 將單一檔案加入staging area：git add <檔案名稱>
-  
-> 所有檔案加入索引：git add .
-  
-> 提交版本：git commit -m "填寫版本資訊"
-  
-> 觀看當前狀態：git status
-  
-> 瀏覽歷史紀錄：git log
-
-*有更新過檔案依定要記得使用 git commit -m *
+### 本地數據庫 注意事項 !
+1. *新增的檔案要執行 add, git才會追蹤到*
+2. *add之後,要執行 commit 指令git才會將更新追蹤那些新的的版本
+    如果沒有使用commit的話，git追蹤的版本會是舊的版本，而且會不允許上傳到遠端*
 ---
 
-# 連結遠端數據庫
-// 前置作業 : 先將此資料夾利用 git init 建立成數據庫(repository)
-git remote add origin <github網址>
+# 本地連結遠端數據庫 
+// 前置作業 : 建立好本地數據庫之後進入本地數據庫的當下資料夾
+  
+### git remote add origin <github網址> 
+> 利用 add 指令連結github.com上面建立好的repository 
+>
+> origin 是在你的 terminal 或 cmd 裡面，遠端資料庫的名字。
+  
+### git clone <github網址> 
+> clone 會直接將github.com上面已有的內容和資料夾內所有內容全部複製到本地
+> 
+> 簡單來說就是複製了一整個數據庫進去指定位置，git的追蹤紀錄也會一起 
+> 
+> *如果用git clone 就不需要提前 git init 一個數據庫*
+  
 
 
 
@@ -82,6 +84,7 @@ git remote add origin <github網址>
 
 
 
-### ref : [https://ithelp.ithome.com.tw/articles/10214385] 
-### ref : [https://git-scm.com/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6]
+#### ref : [https://ithelp.ithome.com.tw/articles/10214385] 
+#### ref : [https://git-scm.com/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6]
+#### ref : [https://www.twblogs.net/a/5c65af43bd9eee06ef3796bb]
 
