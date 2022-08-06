@@ -17,3 +17,5 @@ otherBranch 又做了一些事情
 測試 vscode
 
 測試 git graph
+
+ver1 branch 做了一點事
