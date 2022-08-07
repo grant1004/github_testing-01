@@ -1,0 +1,21 @@
+認識branch
+main 
+
+這裡是 main 做的改變 
+
+main do something 
+
+
+
+這裡是 otherbranh所做的動作
+
+otherBranch 又做了一些事情
+
+
+測試SourceTree 
+
+測試 vscode
+
+測試 git graph
+
+ver1 branch 做了一點事
