@@ -80,6 +80,9 @@
 ### git pull <遠端數據庫簡稱> <指定在遠端數據庫的branch>
 > pull 會將遠端庫branch的內容都拉近本地的數據庫 // 如果沒指定branch會把全部拉進去
 >
+
+### git pull <遠端數據庫簡稱> <指定在遠端數據庫的branch>
+> pull 會將遠端庫branch的內容都拉近本地的數據庫 // git pull --all 拉取全部分支
 >
 
 
