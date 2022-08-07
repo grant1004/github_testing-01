@@ -96,10 +96,14 @@
 
 ### push 舊版本到github 
 > git checkout <local-branch> 切換到要上傳的分支
-> git reset --hard <commit-id> 將此分支reset到你想上傳的版本
+>   
+> git reset --hard <commit-id> 將此分支reset到你想上傳的版本 ** commit id 要使用 git log 去查看 **
+>    
 > git push -f <遠端數據庫簡稱> <指定在遠端數據庫的branch> 
+>   
 > 如果沒有加上 -f 會有錯誤 `error: failed to push some refs to 'https://github.com/grant1004/github_testing-01.git'`
-> 因為舊版本上傳等同於覆蓋全部內容 所以要加上 -f 強制覆蓋 
+>    
+> 因為舊版本上傳等同於覆蓋遠端內容，github會保護資料而阻擋你，所以要加上 -f 強制覆蓋。
 
 
 
