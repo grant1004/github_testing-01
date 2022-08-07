@@ -86,6 +86,18 @@
 >        
 >        *要解決這個問題 要使用 git merge origin/main --allow-unrelated-histories 將無關聯的數據庫合併* 
 
+### git push <遠端數據庫簡稱> <指定在遠端數據庫的branch>
+> 將所在的 branch 資料 push 到遠端的數據庫
+> 
+> 注意 : *如果顯示 everything up to date 代表遠端資料庫是新版且本地並未更新 -> 辦法 : pull 新資料 可能會跟自己的有衝突  * 
+> 
+
+### push 舊版本到github 
+> git checkout <local-branch> 切換到要上傳的分支
+> git reset --hard <commit-id> 將此分支reset到你想上傳的版本
+> git push -f <遠端數據庫簡稱> <指定在遠端數據庫的branch> 
+> 如果沒有加上 -f 會有錯誤 `error: failed to push some refs to 'https://github.com/grant1004/github_testing-01.git'`
+> 因為舊版本上傳等同於覆蓋全部內容 所以要加上 -f 強制覆蓋 
 
 
 
