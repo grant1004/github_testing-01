@@ -78,12 +78,14 @@
 > *如果用git clone 就不需要提前 git init 一個數據庫*
 
 ### git pull <遠端數據庫簡稱> <指定在遠端數據庫的branch>
-> pull 會將遠端庫branch的內容都拉近本地的數據庫 // 如果沒指定branch會把全部拉進去
->
-
-### git pull <遠端數據庫簡稱> <指定在遠端數據庫的branch>
 > pull 會將遠端庫branch的內容都拉近本地的數據庫 // git pull --all 拉取全部分支
->
+> 要注意的一點是 必須先在本建立一個main branch 才能pull 
+> 當本地庫沒有main branch 時，要先完成一次commit(建立檔案，add，commit)他才會init main branch。
+> 
+> 注意 : *如果不是使用 clone 使用 remote 時, pull 並不會合併只會將資料追蹤紀錄拉進來，因為本地和遠端並沒有建立關聯*
+>        
+>        *要解決這個問題 要使用 git merge origin/main --allow-unrelated-histories 將無關聯的數據庫合併* 
+
 
 
 
