@@ -79,11 +79,11 @@
 
 ### git pull <遠端數據庫簡稱> <指定在遠端數據庫的branch>
 > pull 會將遠端庫branch的內容都拉近本地的數據庫 // git pull --all 拉取全部分支
-
+    
 > 要注意的一點是 必須先在本建立一個main branch 才能pull 
-
+    
 > 當本地庫沒有main branch 時，要先完成一次commit(建立檔案，add，commit)他才會init main branch。
-
+    
 > pull 進來的資料雖然已經在本地數據庫了，但其實和本地資料庫是兩條平行線，並沒有關聯，沒有關聯就代表只能用checkout的方式去查看資料
   如果要將資料函並到本地資料庫，要使用`git merge origin/branch_name --allow-unrelated-histories `
 >        
