@@ -81,10 +81,9 @@
 > pull 會將遠端庫branch的內容都拉近本地的數據庫 // git pull --all 拉取全部分支
 > 要注意的一點是 必須先在本建立一個main branch 才能pull 
 > 當本地庫沒有main branch 時，要先完成一次commit(建立檔案，add，commit)他才會init main branch。
-> 
-> 注意 : *如果不是使用 clone 使用 remote 時, pull 並不會合併只會將資料追蹤紀錄拉進來，因為本地和遠端並沒有建立關聯*
+> pull 進來的資料雖然已經在本地數據庫了，但其實和本地資料庫是兩條平行線，並沒有關聯，沒有關聯就代表只能用checkout的方式去查看資料
+  如果要將資料函並到本地資料庫，要使用`git merge origin/branch_name --allow-unrelated-hietories `
 >        
->        *要解決這個問題 要使用 git merge origin/main --allow-unrelated-histories 將無關聯的數據庫合併* 
 
 ### git push <遠端數據庫簡稱> <指定在遠端數據庫的branch>
 > 將所在的 branch 資料 push 到遠端的數據庫
@@ -92,7 +91,7 @@
 > 注意 : * 更新本地資料並push -> 如果顯示 everything up to date 代表遠端資料庫和本地的追蹤紀錄是相同的  
            可能是忘記 commit ， 
            或是本地的是舊版本所以他認為遠端已經有了
-           如果要強制上傳 要加入 -f *
+           如果要就要強制上傳覆蓋遠端內容 要加入 -f *
 > 
 
 ### push 舊版本到github 
