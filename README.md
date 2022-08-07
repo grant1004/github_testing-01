@@ -89,7 +89,10 @@
 ### git push <遠端數據庫簡稱> <指定在遠端數據庫的branch>
 > 將所在的 branch 資料 push 到遠端的數據庫
 > 
-> 注意 : *如果顯示 everything up to date 代表遠端資料庫是新版且本地並未更新 -> 辦法 : pull 新資料 可能會跟自己的有衝突  * 
+> 注意 : * 更新本地資料並push -> 如果顯示 everything up to date 代表遠端資料庫和本地的追蹤紀錄是相同的  
+           可能是忘記 commit ， 
+           或是本地的是舊版本所以他認為遠端已經有了
+           如果要強制上傳 要加入 -f *
 > 
 
 ### push 舊版本到github 
