@@ -85,22 +85,23 @@
 > 當本地庫沒有main branch 時，要先完成一次commit(建立檔案，add，commit)他才會init main branch。
 >   
 > pull 進來的資料雖然已經在本地數據庫了，但其實和本地資料庫是兩條平行線，並沒有關聯，沒有關聯就代表只能用checkout的方式去查看資料
-  如果要將資料函並到本地資料庫，要使用`git merge origin/branch_name --allow-unrelated-histories `
+  如果要將資料函並到本地資料庫，要使用 
+    `git merge origin/branch_name --allow-unrelated-histories`
        
 
 ### git push <遠端數據庫簡稱> <指定在遠端數據庫的branch>
 > 將所在的 branch 資料 push 到遠端的數據庫
 > 
-> 注意 : * 更新本地資料並push -> 如果顯示 everything up to date 代表遠端資料庫和本地的追蹤紀錄是相同的  
+> 注意 : *更新本地資料並push -> 如果顯示 everything up to date 代表遠端資料庫和本地的追蹤紀錄是相同的  
            可能是忘記 commit ， 
            或是本地的是舊版本所以他認為遠端已經有了
-           如果要就要強制上傳覆蓋遠端內容 要加入 -f *
+           如果要就要強制上傳覆蓋遠端內容 要加入 -f*
 > 
 
 ### push 舊版本到github 
 > git checkout <local-branch> 切換到要上傳的分支
 >   
-> git reset --hard <commit-id> 將此分支reset到你想上傳的版本 ** commit id 要使用 git log 去查看 **
+> git reset --hard <commit-id> 將此分支reset到你想上傳的版本 *commit id 要使用 git log 去查看*
 >    
 > git push -f <遠端數據庫簡稱> <指定在遠端數據庫的branch> 
 >   
